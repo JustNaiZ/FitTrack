@@ -54,6 +54,7 @@ public class AddMealProduct extends javax.swing.JFrame {
         addedProducts = new ArrayList<>();
         addedProductsModel = new DefaultTableModel(new Object[]{"Продукт", "Вес (г/мл)", "Ккал", "Белки", "Жиры", "Углеводы"}, 0);
         jTable2.setModel(addedProductsModel);
+        jList1.setModel(new DefaultListModel<>()); // Очистка списка
         jList1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
         // Добавим KeyListener на jTextField1 для поиска продуктов при вводе
